@@ -96,6 +96,32 @@ nav .mobile__menu i {
     color: var(--black-color);
 }
 
+header .mobile__menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+    width: 65%;
+    height: 100vh;
+
+    display: none;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mobile__menu-list li a {
+    font-size: 1.25rem;
+    color: var(--black-color);
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+}
+
+.show__menu {
+    display: flex !important;
+}
 /* ================== Media Queries ================== */
 
 @media screen and (min-width: 1200px) {
